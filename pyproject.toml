@@ -1,0 +1,60 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "layai-agent-reforge"
+version = "0.2.1"
+description = "Layerd AI Agent Reforge — outer-loop agent improvement (HyperAgents-inspired); complements LangGraph."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "Layerd AI" }]
+keywords = [
+  "langgraph",
+  "openclaw",
+  "nemoclaw",
+  "agents",
+  "meta-learning",
+  "hyperagents",
+  "self-improvement",
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+]
+dependencies = [
+  "pydantic>=2.0",
+  "PyYAML>=6.0",
+]
+
+[project.optional-dependencies]
+langgraph = ["langgraph>=0.2.0", "langchain-core>=0.3.0"]
+claw = []
+postgres = ["psycopg[binary]>=3.1.0"]
+docker = []
+dev = ["pytest>=8.0", "pytest-asyncio>=0.24.0"]
+
+[project.scripts]
+layai-reforge = "layai_reforge.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/amitchorasiya/layai-agent-reforge"
+Documentation = "https://github.com/amitchorasiya/layai-agent-reforge#readme"
+Repository = "https://github.com/amitchorasiya/layai-agent-reforge"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/layai_reforge"]
+
+[tool.hatch.build.targets.wheel.sources]
+"src/layai_reforge" = "layai_reforge"
+
+[tool.hatch.build.targets.sdist]
+include = ["src/layai_reforge", "README.md", "LICENSE", "docs", "memory-bank", "examples", "tests"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
