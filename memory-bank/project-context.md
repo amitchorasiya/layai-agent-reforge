@@ -8,7 +8,7 @@
 
 Concepts are **inspired by** Meta’s [HyperAgents](https://ai.meta.com/research/publications/hyperagents/) research; this code is **not** Meta’s and is **not affiliated with Meta**.
 
-**Branding:** full name **Layerd AI Agent Reforge**; short name **Reforge** (spelled with final *e*). PyPI: `layai-agent-reforge`; import: `layai_reforge`.
+**Naming:** full product name **Layerd AI Agent Reforge**; short form **Reforge** (terminal *e*). PyPI distribution **`layai-agent-reforge`**; import namespace **`layai_reforge`**.
 
 ## Package layout
 

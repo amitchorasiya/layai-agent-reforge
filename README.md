@@ -2,7 +2,9 @@
 
 **Layerd AI Agent Reforge** is a Python library for the **outer loop** of agent development: generating program variants, running them under constraints, scoring them with evaluators, archiving results, optionally **gating promotion on human approval**, and evolving an **editable reforge procedure** (the improvement pipeline itself can change). It is meant to sit **next to** runtimes like **[LangGraph](https://github.com/langchain-ai/langgraph)**—your graph still executes tasks; **Reforge** versions and improves the **unified program** (prompts, tools, graph hints, evaluator wiring) that you compile into that runtime.
 
-**Spelling:** the product short name is **Reforge** (with a final *e*). The PyPI package remains **`layai-agent-reforge`**; the import path is **`layai_reforge`**.
+### Naming and distribution
+
+In documentation, the full product name is **Layerd AI Agent Reforge**. The conventional short form is **Reforge**, always spelled with a terminal **e**. The distribution published on the [Python Package Index](https://pypi.org/project/layai-agent-reforge/) is **`layai-agent-reforge`**; the importable Python package is **`layai_reforge`**.
 
 Research concepts are **inspired by** Meta’s **HyperAgents** / DGM-H ([HyperAgents publication](https://ai.meta.com/research/publications/hyperagents/)). This project is **not affiliated with or endorsed by Meta**.
 
@@ -10,6 +12,7 @@ Research concepts are **inspired by** Meta’s **HyperAgents** / DGM-H ([HyperAg
 
 ## Table of contents
 
+- [Naming and distribution](#naming-and-distribution)
 - [Architecture & diagrams](#architecture--diagrams)
 - [LangGraph integration](#langgraph-integration)
 - [What this package is (and is not)](#what-this-package-is-and-is-not)
