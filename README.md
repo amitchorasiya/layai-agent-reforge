@@ -4,7 +4,7 @@
 
 ### Naming and distribution
 
-In documentation, the full product name is **Layerd AI Agent Reforge**. The conventional short form is **Reforge**, always spelled with a terminal **e**. The distribution published on the [Python Package Index](https://pypi.org/project/layai-agent-reforge/) is **`layai-agent-reforge`**; the importable Python package is **`layai_reforge`**.
+In documentation, the full product name is **Layerd AI Agent Reforge**. The conventional short form is **Reforge**. The distribution published on the [Python Package Index](https://pypi.org/project/layai-agent-reforge/) is **`layai-agent-reforge`**; the importable Python package is **`layai_reforge`**.
 
 Research concepts are **inspired by** Meta’s **HyperAgents** / DGM-H ([HyperAgents publication](https://ai.meta.com/research/publications/hyperagents/)). This project is **not affiliated with or endorsed by Meta**.
 
